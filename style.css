@@ -54,7 +54,7 @@ a {
 
 
 :root {
-    --color-green: #003390;
+    --color-green: #a5bff3;
     --color-black: #202020;
     --color-white: #fafafa;
 }
@@ -274,16 +274,18 @@ a {
 
 .img-tread {
     width: 100%;
-    height: 100px;
-    background-image: url(/img/tread-skateboard.jpg);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    height: 100px; /* Ajuste a altura conforme desejado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta o excesso de imagem */
     border-radius: 8px;
 }
 
 .img-tread img {
-    width: 50%;
+    width: 120%;  /* Ajuste a largura para deixar mais "gordinha" */
+    height: auto;
+    object-fit: cover; /* Ajusta a imagem para preencher o contêiner */
 }
 
 .redes-sociais {
@@ -462,3 +464,4 @@ a {
 .freelancer img {
     animation: pulse 3s infinite ease-in-out;
 }
+
